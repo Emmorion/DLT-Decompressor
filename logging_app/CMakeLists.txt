@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.0)
+project(logging_app)
+find_package(PkgConfig)
+pkg_check_modules(DLT REQUIRED automotive-dlt)
+link_directories(${DLT_LIBRARY_DIRS})
+set(SOURCE_EXE main.cpp)
+add_executable(main ${SOURCE_EXE})
+target_link_libraries(main ${DLT_LIBRARIES})
