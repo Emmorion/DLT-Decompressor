@@ -4,5 +4,5 @@ project(compressionLib)
 
 
 
-add_library(compressionLib STATIC compressionLib.cpp compressionLib.hpp)
+add_library(compressionLib STATIC compressionLib.cpp)
 

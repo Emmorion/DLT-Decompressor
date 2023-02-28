@@ -1,0 +1,2 @@
+add_subdirectory(compression_library)
+add_subdirectory(decompressorplugin)
